@@ -1,0 +1,14 @@
+How to add your videos (no coding needed):
+
+1. Compress each preview clip: short (3-6 seconds), muted, .mp4 format, modest
+   resolution (720p is plenty). This keeps the site fast.
+
+2. Name the files exactly: 01.mp4, 02.mp4, 03.mp4, 04.mp4, 05.mp4, 06.mp4
+   (these match the 6 project boxes already on the page).
+
+3. Drop them into this "videos" folder, replacing this text file's spot.
+   That's it — no HTML/CSS editing required. They'll autoplay, loop, and
+   scale up slightly on hover automatically.
+
+Want more than 6 projects later? Just send Claude the new project's title,
+short description, and video — it'll add the extra box for you in seconds.
