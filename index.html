@@ -154,14 +154,23 @@
   /* ---------- Footer ---------- */
   footer{
     margin-top:clamp(40px,8vh,80px);
-    padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));
+    padding:32px 0 calc(28px + env(safe-area-inset-bottom,0px));
     border-top:1px solid rgba(255,255,255,.15);
-    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;
-    font-size:.85rem;color:var(--soft);
+    text-align:center;font-size:.85rem;color:var(--soft);
   }
-  footer .links{display:flex;flex-wrap:wrap;gap:8px 24px}
-  footer a{color:var(--soft);text-decoration:none}
-  footer a:hover{color:var(--gold)}
+  footer .ig{
+    display:inline-block;font-weight:700;font-size:clamp(1.05rem,2vw,1.3rem);
+    color:var(--white);text-decoration:none;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), color .3s;
+  }
+  footer .ig:hover{color:var(--gold);transform:scale(1.06)}
+  footer .ig:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
+  footer .dm{margin-top:.4em;font-size:clamp(.85rem,1.4vw,.95rem)}
+  footer .links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;margin-top:18px}
+  footer .links:empty{display:none}
+  footer .links a{color:var(--soft);text-decoration:none}
+  footer .links a:hover{color:var(--gold)}
+  footer .copy{margin-top:22px;font-size:.75rem;opacity:.7}
 
   /* ---------- Small screens ---------- */
   @media (max-width:480px){
@@ -211,8 +220,9 @@
   <div id="sections"></div>
 
   <footer>
-    <span>© 2026 NFX Motion</span>
+    <div id="igBlock"></div>
     <div class="links" id="contact"></div>
+    <div class="copy">© 2026 NFX Motion</div>
   </footer>
 </div>
 
@@ -379,8 +389,14 @@
   if (C.phone) add(C.phone, 'tel:' + C.phone.replace(/[^\d+]/g,''));
   if (C.email) add(C.email, 'mailto:' + C.email);
   if (C.instagram){
-    var ig = C.instagram.replace(/^@/,'');
-    add('Instagram', /^https?:/.test(ig) ? ig : 'https://instagram.com/' + ig, true);
+    var ig = C.instagram.replace(/^@/,'').replace(/^https?:\/\/(www\.)?instagram\.com\//,'').replace(/\/.*$/,'');
+    var blk = document.getElementById('igBlock');
+    var a = document.createElement('a');
+    a.className = 'ig'; a.textContent = '@' + ig;
+    a.href = 'https://www.instagram.com/' + ig; a.target = '_blank'; a.rel = 'noopener';
+    var dm = document.createElement('p'); dm.className = 'dm';
+    dm.textContent = 'For projects and collaborations, send me a DM on Instagram';
+    blk.appendChild(a); blk.appendChild(dm);
   }
 })();
 </script>

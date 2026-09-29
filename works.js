@@ -8,6 +8,7 @@
 //  - اسم الملف: نفس اسم الفيديو يلي رفعته جوّا فولدر videos
 //  - العنوان: الكلمة يلي بتطلع تحت الفيديو
 //  - الرابط: رابط درايف أو إنستا. إذا فاضي، ما بتطلع "Watch full video"
+//    (إذا ما في رابط بس بدك تجبر عرضي/طولي، اترك مكان الرابط فاضي:  "gfx-2.mp4 |  |  | wide")
 //
 //  الفيديو العرضي والطولي بيتعرفوا لحالهن من الفيديو نفسه.
 //  إذا بدك تجبر فيديو يطلع عرضي أو طولي، زيد بآخر السطر:  | wide  أو  | tall
@@ -28,7 +29,7 @@ var PROFILE_LINK = "https://www.instagram.com/nfx_motion";
 var CONTACT = {
   phone:     "",
   email:     "",
-  instagram: ""
+  instagram: "nfx_motion"
 };
 
 
@@ -71,16 +72,16 @@ var SECTIONS = [
       "motion-5.mp4  | 2d Motion Graphic | https://drive.google.com/file/d/10ctDHBMmqjGvanQ35ZpMY2o_UGhgaADt/view", // منصة وهج ٤
       "motion-6.mp4  | 2d Motion Graphic | https://drive.google.com/file/d/19NooQBYs3QVc-GtCSKBOVIJVkTp9PaLQ/view", // منصة وهج ٥
       "motion-7.mp4  | 2d Motion Graphic | https://www.instagram.com/reel/DMx3DUzCLiT/",                        // مكتبة المودة
-      "motion-8.mp4  | 2d Motion Graphic | https://drive.google.com/file/d/1amPQcB3sjtpNoy1fXVe0ikz-UipsY_Ah/view", // تايبوغرافي (عرضي)
-      "motion-9.mp4  | 2d Motion Graphic | https://drive.google.com/file/d/1_r4hX2cGiZUE7VZBnlMZGOFfWdbEetH8/view", // الكويت (عرضي)
+      "motion-8.mp4  | 2d Motion Graphic | https://drive.google.com/file/d/1amPQcB3sjtpNoy1fXVe0ikz-UipsY_Ah/view | wide", // تايبوغرافي (عرضي)
+      "motion-9.mp4  | 2d Motion Graphic | https://drive.google.com/file/d/1_r4hX2cGiZUE7VZBnlMZGOFfWdbEetH8/view | wide", // الكويت (عرضي)
       "motion-10.mp4 | 2d Motion Graphic | https://drive.google.com/file/d/18WeA44I9-W0PpGlDlx_71ApVF-G2hZq6/view", // لوغو هوية
       "motion-11.mp4 | 2d Motion Graphic | https://drive.google.com/file/d/1jcmqvzva1PJTRNF_97ZQs_TYo8eOqZHC/view", // لوغو فرمان
     ],
     soon: [
-      "motion-12.mp4 |  | ",
-      "motion-13.mp4 |  | ",
-      "motion-14.mp4 |  | ",
-      "motion-15.mp4 |  | ",
+      "motion-12.mp4 |  |  | tall",
+      "motion-13.mp4 |  |  | tall",
+      "motion-14.mp4 |  |  | wide",
+      "motion-15.mp4 |  |  | wide",
     ]},
 
   { title: "Ai Short Films", layout: "landscape",
@@ -113,8 +114,10 @@ var SECTIONS = [
     videos: [
       "gfx-1.mp4 | Hajar | https://drive.google.com/file/d/1aMTzwpI83-TV32a-NyZffaDi1AEutXWB/view",
     ],
+    soon: [
+      "gfx-2.mp4 |  |  | wide",
+    ],
     spare: [
-      "gfx-2.mp4 |  | ",
       "gfx-3.mp4 |  | ",
       "gfx-4.mp4 |  | ",
     ]},
