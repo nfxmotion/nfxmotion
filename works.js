@@ -10,6 +10,7 @@
 //  - الرابط: رابط درايف أو إنستا. إذا فاضي، ما بتطلع "Watch full video"
 //
 //  الفيديو العرضي والطولي بيتعرفوا لحالهن من الفيديو نفسه.
+//  إذا بدك تجبر فيديو يطلع عرضي أو طولي، زيد بآخر السطر:  | wide  أو  | tall
 //  انتبه: كل سطر لازم يبلّش ويخلص بـ "  وبعدو فاصلة ,
 //
 //  videos = الفيديوهات الأساسية
@@ -33,11 +34,11 @@ var CONTACT = {
 
 // ---------- الأعمال المختارة (فوق، بلا عنوان) ----------
 var FEATURED = { layout: "portrait", big: true, videos: [
-  "featured-1.mp4 | 3d Motion graphics | https://www.instagram.com/reel/DJKBheTNoUX/",
-  "featured-2.mp4 | AI VFX | https://www.instagram.com/reel/DdesYqwIVEC/",
-  "featured-3.mp4 | Typography | https://www.instagram.com/reel/DUwC0tSkvoR/",
-  "featured-4.mp4 | Syrian Made Logo | https://www.instagram.com/reel/DcrECbmIBNX/",
-  "featured-5.mp4 | 2d Motion graphics | https://www.instagram.com/reel/C_a80KTqmmo/",
+  "featured-1.mp4 | 3d Motion graphics | https://www.instagram.com/reel/DJKBheTNoUX/ | tall",
+  "featured-2.mp4 | AI VFX | https://www.instagram.com/reel/DdesYqwIVEC/ | tall",
+  "featured-3.mp4 | Typography | https://www.instagram.com/reel/DUwC0tSkvoR/ | tall",
+  "featured-4.mp4 | Syrian Made Logo | https://www.instagram.com/reel/DcrECbmIBNX/ | wide",
+  "featured-5.mp4 | 2d Motion graphics | https://www.instagram.com/reel/C_a80KTqmmo/ | wide",
 ]};
 
 
