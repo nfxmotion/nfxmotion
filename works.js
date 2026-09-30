@@ -136,4 +136,16 @@ var SECTIONS = [
       "intro-8.mp4 |  | ",
     ]},
 
+  { title: "Logo Animation", layout: "landscape",
+    videos: [
+      "logo-1.mp4 | Logo Animation | ",
+      "logo-2.mp4 | Logo Animation | ",
+      "logo-3.mp4 | Logo Animation | ",
+      "logo-4.mp4 | Logo Animation | ",
+    ],
+    soon: [
+      "logo-5.mp4 |  |  | wide",
+      "logo-6.mp4 |  |  | wide",
+    ]},
+
 ];
