@@ -54,9 +54,9 @@ var SECTIONS = [
       "podcast-2.mp4 | intro 2 | https://drive.google.com/file/d/19VX6k7Lg8XMbeTghluP_iKUzRbBFRnKi/view",
       "podcast-3.mp4 | intro 3 | https://drive.google.com/file/d/1_wPGcBAwCaneWbsqzQR8jYKjEM7WpTPJ/view",
       "podcast-4.mp4 | intro 4 | https://drive.google.com/file/d/1EVxtr4YirnYY2ohb-uzvyCZZTqfi43-8/view",
+      "podcast-5.mp4 | intro 5 | https://drive.google.com/file/d/1KsI1zwN-Jzur-28TXoEmD_KZT2SFWLyF/view",
     ],
     soon: [
-      "podcast-5.mp4 |  | ",
       "podcast-6.mp4 |  | ",
     ],
     spare: [
