@@ -11,7 +11,7 @@
 //    (إذا ما في رابط بس بدك تجبر عرضي/طولي، اترك مكان الرابط فاضي:  "gfx-2.mp4 |  |  | wide")
 //
 //  الفيديو العرضي والطولي بيتعرفوا لحالهن من الفيديو نفسه.
-//  إذا بدك تجبر فيديو يطلع عرضي أو طولي، زيد بآخر السطر:  | wide  أو  | tall
+//  إذا بدك تجبر فيديو يطلع عرضي أو طولي أو مربع، زيد بآخر السطر:  | wide  أو  | tall  أو  | square
 //  انتبه: كل سطر لازم يبلّش ويخلص بـ "  وبعدو فاصلة ,
 //
 //  videos = الفيديوهات الأساسية
@@ -39,6 +39,7 @@ var FEATURED = { layout: "portrait", big: true, videos: [
   "featured-2.mp4 | AI VFX | https://www.instagram.com/reel/DdesYqwIVEC/ | tall",
   "featured-3.mp4 | Typography | https://www.instagram.com/reel/DUwC0tSkvoR/ | tall",
   "featured-4.mp4 | Syrian Made Logo | https://www.instagram.com/reel/DcrECbmIBNX/ | wide",
+  "featured-6.mp4 |  | https://www.instagram.com/reel/DePRguhIEdO/ | square",   // الفيديو المربع الكبير بالنص
   "featured-5.mp4 | 2d Motion graphics | https://www.instagram.com/reel/C_a80KTqmmo/ | wide",
 ]};
 
